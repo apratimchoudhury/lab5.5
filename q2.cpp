@@ -5,31 +5,24 @@ using namespace std;
 //write main function
 int main()
 {
+	//declare variables
+	int a;
+	//take input
+	cout<<"Enter the size of the pattern to be printed: ";
+	cin>>a;	
 	//loop for the entire printing	
-	for(int i=0;i<5;i++)
+	for(int i=0;i<a;i++)
 	{
-		if(i==0||i==4)
+		for(int j=0;j<a;j++)
 		{
-			//loop for the first and last lines			
-			for (int j=0;j<5;j++)
+			if(i==0||i==a-1||j==0||j==a-1)
 			{
 				cout<<"*";
 			}
+			else
+				cout<<" ";
 		}
-			
-		else if(i==1||i==2||i==3)
-			{
-				//loop for the rest of the lines				
-				cout<<"*";
-				for(int k=0;k<3;k++)
-				{
-					cout<<" ";
-				}
-			
-				cout<<"*";
-			}
-		cout<<endl;
-		
+	cout<<endl;	
 	}
 	return 0;
 }
