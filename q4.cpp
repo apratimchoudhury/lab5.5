@@ -5,11 +5,16 @@ using namespace std;
 //write main function
 int main()
 {
+	//declare variables
+	int a;
+	//take input
+	cout<<"Enter the size of the pattern to be printed: ";
+	cin>>a;	
 	//main loop	
-	for(int i=0;i<5;i++)
+	for(int i=0;i<a;i++)
 	{
 		//loop for blank triangle		
-		for(int j=0;j<4-i;j++)
+		for(int j=0;j<a-1-i;j++)
 		{
 			cout<<" ";
 			
@@ -22,4 +27,5 @@ int main()
 	cout<<endl;		
 		
 	}
+	return 0;
 }
